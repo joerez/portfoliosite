@@ -209,6 +209,7 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .upgradetext {
@@ -240,7 +241,62 @@ body, html {
   position: absolute;
   top: 20; left: 0; right: 0;
   height: 100vh;
-  background: url('https://images.template.net/wp-content/uploads/2015/08/Crumpled-Free-Paper-Background-for-You.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
+}
+
+.portbtn {
+  margin-top: 40px;
+  height: 70px;
+  width: 200px;
+  background: black;
+  color: white;
+  border: solid 4px black;
+  border-radius: 9px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.portbtn:hover {
+  background: white;
+  color: black;
+  border-color: solid 4px white;
+}
+
+.portimg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-top: 7%;
+  display: none;
+}
+
+.portbtn2 {
+  margin-top: 40px;
+  height: 70px;
+  width: 200px;
+  background: black;
+  color: white;
+  border: solid 4px black;
+  border-radius: 9px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.portbtn2:hover {
+  background: white;
+  color: black;
+  border-color: solid 4px white;
+}
+
+.portimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-top: 7%;
+}
+
+.portjoehelps2 {
+  transform: rotateY(180deg);
 }

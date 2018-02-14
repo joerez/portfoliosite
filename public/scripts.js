@@ -67,8 +67,8 @@ $(document).ready(function()
       $('.speechUp').css("display", "flex");
       $('.upgradetext').fadeIn(1000).delay(500, function() {
         $('.speechUp').fadeOut(1500, function() {
-          $('.portfolio').fadeIn(1000);
-          $('.skilltree').fadeIn(700);
+          $('.portfolio').fadeIn(200);
+          $('.skilltree').fadeIn(200);
       })
 
     });
@@ -78,8 +78,13 @@ $(document).ready(function()
 
 
 
+  $('.portbtn').on("click", function() {
+    $('.portimg').hide(10);
+    $('.portimg2').slideDown(250).delay(100, function(){
+      $('.portbtn').hide(10)
 
-
+  })
+})
 
 
 
