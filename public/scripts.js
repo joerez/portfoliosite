@@ -87,7 +87,21 @@ $(document).ready(function()
 })
 
 
+$('.portbtn2').on("click", function() {
+  $('.sunflowers').show(0, function() {
+    $('.portfolio').fadeOut(3000, function() {
+      $('.sunflowerimg').delay(3000).fadeIn(1000);
+    })
+  });
+})
 
+
+$('.sunbtn').on("click", function() {
+  $('.sunflowerimg').hide(10);
+  $('.sunflowerimg2').slideDown(250).delay(100, function() {
+    $('.sunbtn').hide(10);
+  })
+})
 
 //JQUERY UI
 
