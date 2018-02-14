@@ -103,6 +103,16 @@ $('.sunbtn').on("click", function() {
   })
 })
 
+
+
+$('#yeshungry').on("click", function() {
+  $('.digifridge').slideDown(250)
+})
+
+
+
+
+
 //JQUERY UI
 
 

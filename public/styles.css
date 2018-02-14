@@ -363,3 +363,59 @@ body, html {
   color: black;
   border-color: solid 4px white;
 }
+
+
+/***********************************
+          DIGI FIRDGE
+***********************************/
+
+.digifridge {
+  display: none;
+  z-index: 5;
+  position: absolute;
+  top: 20; left: 0; right: 0;
+  height: 100vh;
+  background: url('http://www.powerpointhintergrund.com/uploads/2017/05/free-cool-blue-gradient-background-2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.gridcon {
+  margin-top: 30px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px 10px;
+  grid-template-areas: "a a a a a a"
+                       "b b c c c c"
+                       "d d d e e e";
+}
+
+.a {
+  grid-area: a;
+  background: green;
+}
+
+.b {
+  grid-area: b;
+  background: red;
+}
+
+.c {
+  grid-area: c;
+  background: black;
+}
+
+.d {
+  grid-area: d;
+  background: purple;
+}
+
+.e {
+  grid-area: e;
+  background-color: powderblue;
+}
