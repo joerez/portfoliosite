@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 /***************************************
               PRELOADER
 ***************************************/
@@ -65,8 +69,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  height: 500px;
-  width: 400px;
+  height: 50%;
+  width: 20%;
   border: solid 4px black;
 }
 
@@ -111,4 +115,132 @@
   background: white;
   color: black;
   border-color: solid 4px white;
+}
+
+.hellimg {
+  display: none;
+  margin-top: 10%;
+}
+
+.hellimg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  display: none;
+  margin-top: 10%;
+}
+
+
+.joehelps {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.joehelps2 {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  transform: rotateY(180deg);
+}
+
+
+.phelps {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.phelps2 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+  padding-bottom: 20px;
+}
+
+
+.hellbtn2 {
+  margin-top: 100px;
+  height: 70px;
+  width: 300px;
+  background: black;
+  color: white;
+  border: solid 4px black;
+  border-radius: 9px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.hellbtn2:hover {
+  background: white;
+  color: black;
+  border-color: solid 4px white;
+}
+
+.hellbtn3 {
+  margin-top: 100px;
+  height: 70px;
+  width: 200px;
+  background: black;
+  color: white;
+  border: solid 4px black;
+  border-radius: 9px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.hellbtn3:hover {
+  background: white;
+  color: black;
+  border-color: solid 4px white;
+}
+
+
+/**********************************
+            SPEECH UP
+***********************************/
+
+.speechUp {
+  display: none;
+  z-index: 5;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 100vh;
+  background: url('https://img00.deviantart.net/983c/i/2012/095/f/9/skyrim_mage_nebula_by_lorem_spitfire-d4v2bgw.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upgradetext {
+  display: none;
+  color: white;
+}
+
+/**********************************
+            PORTFOLIO
+***********************************/
+
+.skilltree {
+  display: none;
+  background: rgba(0,0,0,.7);
+  color: white;
+  height: 300px;
+  width: 150px;
+  z-index: 50;
+  position: absolute;
+  top: 50;
+  left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.portfolio {
+  display: none;
+  z-index: 6;
+  position: absolute;
+  top: 20; left: 0; right: 0;
+  height: 100vh;
+  background: url('https://images.template.net/wp-content/uploads/2015/08/Crumpled-Free-Paper-Background-for-You.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

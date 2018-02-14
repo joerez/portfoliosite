@@ -44,19 +44,37 @@ $(document).ready(function()
 
 
   $('.hellbtn').on("click", function() {
-    $('.hellbtn').hide(10)
-    $('.hellimg').slideToggle(250)
+    $('.hellimg').slideDown(250).delay(100, function(){
+      $('.hellbtn').hide(10)
+    })
+
   })
 
 
 
 
+  $('.hellbtn2').on("click", function() {
+
+    $('.hellimg').addClass("animated zoomOut")
+      $('.hellimg2').slideDown(250);
+
+  })
 
 
+  $('.hellbtn3').on("click", function() {
+    $('.hell').fadeOut(1000);
+    $('.speechUp').fadeIn(1500, function() {
+      $('.speechUp').css("display", "flex");
+      $('.upgradetext').fadeIn(1000).delay(500, function() {
+        $('.speechUp').fadeOut(1500, function() {
+          $('.portfolio').fadeIn(1000);
+          $('.skilltree').fadeIn(700);
+      })
 
+    });
+  })
 
-
-
+})
 
 
 
@@ -78,7 +96,6 @@ $( function() {
   $( "#droppable" ).droppable({drop: function() {
     $('.heaven').fadeOut(2000);
     $('.hell').fadeIn(3000);
-    $('.hellimg').delay(2000).fadeIn(1000);
   }});
 } );
 
