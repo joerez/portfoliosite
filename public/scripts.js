@@ -106,11 +106,15 @@ $('.sunbtn').on("click", function() {
 
 
 $('#yeshungry').on("click", function() {
-  $('.digifridge').slideDown(250)
+  $('.digifridge').show(0, function() {
+    $('.digifridge').addClass('animated flipInX');
+  })
 })
 
-
-
+$('.fridgebtn').on("click", function() {
+  $('.adventurecontinues').show(250);
+  $('.adventurecontinues').css("display", "flex");
+})
 
 
 //JQUERY UI

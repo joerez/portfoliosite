@@ -374,7 +374,6 @@ body, html {
   z-index: 5;
   position: absolute;
   top: 20; left: 0; right: 0;
-  height: 100vh;
   background: url('http://www.powerpointhintergrund.com/uploads/2017/05/free-cool-blue-gradient-background-2.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -386,7 +385,6 @@ body, html {
 
 .gridcon {
   margin-top: 30px;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px 10px;
@@ -397,25 +395,90 @@ body, html {
 
 .a {
   grid-area: a;
-  background: green;
+  background: linear-gradient(rgba(62, 20, 20, 0.3), rgba(62, 20, 20, 0.4)), url('https://cdn.filestackcontent.com/sm4wgp4kSvepH6hyNvwi');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.atext {
+  /*display: none;*/
 }
 
 .b {
   grid-area: b;
-  background: red;
+  background: #686de0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
 }
 
 .c {
   grid-area: c;
-  background: black;
+  background: #f0932b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.ctext {
 }
 
 .d {
   grid-area: d;
-  background: purple;
+  background: #badc58;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
 }
 
 .e {
   grid-area: e;
   background-color: powderblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fridgebtn {
+  margin-top: 40px;
+  height: 70px;
+  width: 200px;
+  background: rgba(0,0,0,.4);
+  color: white;
+  border: solid 4px white;
+  border-radius: 9px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.fridgebtn:hover {
+  background: white;
+  color: black;
+  border-color: solid 4px white;
+}
+
+.adventurecontinues {
+  display: none;
+  background-image: url('https://image.ibb.co/jZDebS/imageedit_6_5931744098.png');
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
