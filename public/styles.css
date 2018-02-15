@@ -482,3 +482,20 @@ body, html {
   align-items: center;
   color: white;
 }
+
+.fridgebtn2 {
+  margin-top: 40px;
+  height: 50px;
+  width: 100px;
+  background: rgba(0,0,0,.4);
+  color: white;
+  border: solid 4px white;
+  border-radius: 9px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.fridgebtn2:hover {
+  background: white;
+  color: black;
+  border-color: solid 4px white;
+}

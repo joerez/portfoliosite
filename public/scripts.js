@@ -108,12 +108,17 @@ $('.sunbtn').on("click", function() {
 $('#yeshungry').on("click", function() {
   $('.digifridge').show(0, function() {
     $('.digifridge').addClass('animated flipInX');
+    $('.sunflowers').hide(10);
   })
 })
 
 $('.fridgebtn').on("click", function() {
   $('.adventurecontinues').show(250);
   $('.adventurecontinues').css("display", "flex");
+})
+
+$('#dontcontinue').on("click", function() {
+  $('.adventurecontinues').hide(250);
 })
 
 
