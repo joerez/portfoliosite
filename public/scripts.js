@@ -122,6 +122,15 @@ $('#dontcontinue').on("click", function() {
 })
 
 
+$('.continueadventure').on("click", function() {
+  $('.adventurecontinues').addClass(animated bounceOutRight);
+  $('.digifridge').hide(10);
+  $('.codingforkids').show(0, function() {
+    $('.codingforkids').addClass('animated flipInX');
+
+})
+
+
 //JQUERY UI
 
 
