@@ -126,9 +126,19 @@ $('#continueadventure').on("click", function() {
   $('.adventurecontinues').hide(10);
   $('.digifridge').hide(10);
   $('.codingforkids').show(0, function() {
-    $('.codingforkids').addClass('animated flipInX');
+    $('.codingforkids').addClass('animated flipInY');
 })
 })
+
+$('#adventcont2').on("click", function() {
+  $('.norepeat').show(250);
+  $('.norepeat').css("display", "flex");
+})
+
+$('#dontcontinue2').on("click", function() {
+  $('.norepeat').hide(250);
+})
+
 
 
 //JQUERY UI
