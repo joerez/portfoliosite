@@ -10,7 +10,6 @@ body {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   margin: auto;
-  margin-top: 40%;
   height: 200px;
   width: 200px;
   background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
