@@ -42,6 +42,22 @@ body, html {
   transform: scale(1.3);
 }
 
+.endEarly {
+  display: none;
+  margin-top: 30%;
+  background-color: black;
+  border-radius: 9px;
+  color: white;
+  border-color: white;
+  transform: scale(1.3);
+  margin-top: 40px;
+}
+
+.endEarly:hover {
+  background-color: white;
+  color: black;
+}
+
 .proceed:hover {
   background-color: white;
   color: black;
@@ -577,4 +593,34 @@ body, html {
   background-color: white;
   color: black;
   transform: scale(3) rotate(2deg) translateY(20px);
+}
+
+/******************************
+       showportfolio
+******************************/
+
+
+
+.showportfolio {
+  display: none;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.portbox {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  text-align: center;
 }

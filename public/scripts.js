@@ -18,7 +18,7 @@ $(document).ready(function()
   })
 
   $('.proceed').delay(12000).show(1000);
-
+  $('.endEarly').delay(12000).show(2000);
 
   $('.proceed').on("click", function() {
     $('.heaven').fadeIn(1000);
@@ -149,6 +149,8 @@ $('#dontcontinue2').on("click", function() {
 
 $('#continueadventure2').on("click", function() {
   $('.adventurecontinues').hide(10);
+  $('.codingforkids').css("display", "none");
+
   $('.codingforkids').hide(10);
 
   $('.preloader').hide(10);
@@ -162,6 +164,18 @@ $('#continueadventure2').on("click", function() {
 })
 
 })
+
+
+$('.resp1').on("click", function() {
+  $('.finalform').addClass('woah scaleOut');
+  $('.showportfolio').delay(0).fadeIn(7000, function() {
+    $('.showportfolio').css('display', 'flex');
+    $('.portbox').slideDown(500);
+    $("#staticAudio")[0].play();
+
+  });
+})
+
 
 //JQUERY UI
 
