@@ -165,6 +165,24 @@ $('#continueadventure2').on("click", function() {
 
 })
 
+$('#continueadventure3').on("click", function() {
+  $('.adventurecontinues').hide(10);
+  $('.codingforkids').css("display", "none");
+
+  $('.codingforkids').hide(10);
+
+
+  $('.finalform').fadeIn(2000, function() {
+    $('.finalform').css("display", "flex");
+      $('.finalformpic').fadeIn(1000);
+      $('.finalformpic').addClass('woah wowzors', function() {
+        $('.finalBox').delay(500).show(0).addClass('woah comeInStyle')
+      });
+})
+
+})
+
+
 
 $('.resp1').on("click", function() {
   $('.finalform').addClass('woah scaleOut');
