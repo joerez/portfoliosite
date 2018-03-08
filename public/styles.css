@@ -535,3 +535,46 @@ body, html {
   align-items: center;
   background-color: black;
 }
+
+
+/******************************
+       finalform
+******************************/
+
+.finalform {
+  display: none;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  background: url('https://media1.tenor.com/images/bbac2551457785bd9af3e19c1c3ce0d8/tenor.gif?itemid=8700617');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.finalformpic {
+  display: none;
+}
+
+.finalBox {
+  display: none;
+}
+
+.resp1 {
+  background-color: black;
+  padding: 5px;
+  border-radius: 4px;
+  transition: transform 200ms, background-color 200ms, color 200ms;
+}
+
+.resp1:hover {
+  background-color: white;
+  color: black;
+  transform: scale(3) rotate(2deg) translateY(20px);
+}

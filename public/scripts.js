@@ -112,6 +112,14 @@ $('#yeshungry').on("click", function() {
   })
 })
 
+$('#nohungry').on("click", function() {
+  $('.codingforkids').show(0, function() {
+    $('.codingforkids').addClass('animated flipInX');
+    $('.sunflowers').hide(10);
+  })
+})
+
+
 $('.fridgebtn').on("click", function() {
   $('.adventurecontinues').show(250);
   $('.adventurecontinues').css("display", "flex");
@@ -130,7 +138,7 @@ $('#continueadventure').on("click", function() {
 })
 })
 
-$('#adventcont2').on("click", function() {
+$('#adventcon2').on("click", function() {
   $('.norepeat').show(250);
   $('.norepeat').css("display", "flex");
 })
@@ -139,7 +147,21 @@ $('#dontcontinue2').on("click", function() {
   $('.norepeat').hide(250);
 })
 
+$('#continueadventure2').on("click", function() {
+  $('.adventurecontinues').hide(10);
+  $('.codingforkids').hide(10);
 
+  $('.preloader').hide(10);
+
+  $('.finalform').fadeIn(2000, function() {
+    $('.finalform').css("display", "flex");
+      $('.finalformpic').fadeIn(1000);
+      $('.finalformpic').addClass('woah wowzors', function() {
+        $('.finalBox').delay(500).show(0).addClass('woah comeInStyle')
+      });
+})
+
+})
 
 //JQUERY UI
 
