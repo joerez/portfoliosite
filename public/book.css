@@ -238,6 +238,19 @@ body {
   border: solid 1px black;
 }
 
+.pagecontent {
+  display: flex;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  transform-origin: left;
+  transform: rotateY(0deg);
+  left: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .firstPage {
   display: flex;
   position: absolute;

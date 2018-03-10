@@ -28,6 +28,17 @@ $('.book').css("transform", "rotateY(40deg) rotateX(-39deg) scale(1.1)");
 
 })
 
+function newPage(element) {
+
+  $(this).css("z-index", "19");
+
+  $(element).on("click", function() {
+    $(this).css('transform', 'rotateY(-180deg)');
+
+  })
+}
+
+
 $('.cover').on("click", function() {
 
   $('.book').css("transform", "rotateY(0deg) rotateX(-0deg) scale(1)");
@@ -42,6 +53,25 @@ $('.firstPage').on("click", function() {
 
 })
 
+$('.bookBack').on("click", function() {
+  $('.fifthPage').css('transform', 'rotateY(0deg)');
+  $('.fourthPage').css('transform', 'rotateY(0deg)');
+  $('.thirdPage').css('transform', 'rotateY(0deg)');
+  $('.secondPage').css('transform', 'rotateY(0deg)');
+  $('.firstPage').css('transform', 'rotateY(0deg)');
+  $('.cover').css('transform', 'rotateY(0deg)');
+  $('.cover').css("color", "white");
+  $('.book').css("transform", "rotateY(40deg) rotateX(-39deg) scale(1.1)").show(0, function() {
+})
+})
+
+newPage('.secondPage');
+
+newPage('.thirdPage');
+
+newPage('.fourthPage');
+
+// newPage('.fifthPage');
 
 
 })
