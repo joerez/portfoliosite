@@ -159,6 +159,10 @@ body {
   border: solid 1px black;
   transition: all 1s;
   transform-style: preserve-3d;
+  /*transform: rotateY(40deg) rotateX(-39deg) scale(1.1);*/
+}
+
+.hoveit:hover {
   transform: rotateY(40deg) rotateX(-39deg) scale(1.1);
 }
 
@@ -197,6 +201,7 @@ body {
   border-top-left-radius: 5%;
   color: white;
   text-align: center;
+  font-size: 90%;
 }
 
 .page {
