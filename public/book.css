@@ -40,7 +40,7 @@ body {
       top: -396px;
       bottom: 0;
       margin: auto;
-      background: repeating-linear-gradient(#e66465, #e66465 1px, #9198e5 1px, #9198e5 15px);
+      background: repeating-linear-gradient(#000, #000 1px, #9198e5 1px, #9198e5 4px);
       transform: rotateX(97deg) rotateY(0deg) translateY(-50px);
       color: white;
       border-right: none;
@@ -79,7 +79,7 @@ element.style {
       top: 0;
       bottom: 0;
       margin: auto;
-      background: gray;
+      background: repeating-linear-gradient(90deg, #000, #000 1px, #9198e5 1px, #9198e5 4px);
       transform: rotateY(90deg) translateX(54px);
       border: solid 3px black;
       /* border-top-left-radius: 5%; */
@@ -87,6 +87,8 @@ element.style {
       text-align: center;
       font-size: 90%;
       transform-style: preserve-3d;
+      border-top: none;
+      border-bottom: none;
     }
 
 
