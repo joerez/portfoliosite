@@ -2,147 +2,6 @@ body {
   perspective: 2000px;
 }
 
-/*.book {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  height: 400px;
-  width: 600px;
-  background: brown;
-  perspective: 1400px;
-  border: solid 1px black;
-  transition: all 1s;
-  transform-style: preserve-3d;
-}
-
-/*.book:hover {
-  transform: rotateY(40deg) rotateX(-39deg) scale(1.1);
-}*/
-
-/*.title {
-    content: "";
-    height: 400px;
-    width: 60px;
-    position: absolute;
-    right: 0;
-    left: -600px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #AB4747;
-    transform: rotateY(-80deg) translateX(-30px);
-    border: solid 3px black;
-    color: white;
-}
-
-.top {
-    content: "";
-    height: 90px;
-    width: 600px;
-    border: solid 10px black;
-    position: absolute;
-    right: 0;
-    left: 3px;
-    top: -396px;
-    bottom: 0;
-    margin: auto;
-    background: repeating-linear-gradient(#e66465, #e66465 1px, #9198e5 1px, #9198e5 15px);
-    transform: rotateX(97deg) translateY(-50px);
-    color: white;
-    border-right: none;
-}
-
-.halfline {
-  width: 5px;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  left: 50%;
-}
-
-.open {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.page {
-  width: 50%;
-  border: solid 1px black;
-  height: 400px;
-  background: brown;
-  position: relative;
-  color: white;
-  /*backface-visibility: hidden;*/
-/*}
-
-.pg1 {
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.pg2 {
-  position: absolute;
-  transition: all 1s ease-in-out;
-  transform-origin: left;
-  transform: rotateY(0deg);
-  left: 300px;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.pg3 {
-  position: absolute;
-  transition: all 1s ease-in-out;
-  transform-origin: left;
-  transform: rotateY(0deg);
-  left: 300px;
-  z-index: 19;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.pg4 {
-  position: absolute;
-  transition: all 1s ease-in-out;
-  transform-origin: left;
-  transform: rotateY(0deg);
-  left: 300px;
-  z-index: 18;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.pg5 {
-  position: absolute;
-  transition: all 1s ease-in-out;
-  transform-origin: left;
-  transform: rotateY(0deg);
-  left: 300px;
-  z-index: 17;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}*/
 
 
 .book {
@@ -159,12 +18,13 @@ body {
   border: solid 1px black;
   transition: all 1s;
   transform-style: preserve-3d;
-  /*transform: rotateY(40deg) rotateX(-39deg) scale(1.1);*/
+  /*transform: rotateY(0deg) rotateX(0deg) scale(1.1);*/
+  animation: rotate 10s infinite linear;
 }
 
-.hoveit:hover {
+/*.hoveit:hover {
   transform: rotateY(40deg) rotateX(-39deg) scale(1.1);
-}
+}*/
 
 .bookTop {
   content: "";
@@ -185,23 +45,39 @@ body {
   border-right: none;
 }
 
+
+element.style {
+}
 .bookSide {
-  content: "";
-  height: 400px;
-  width: 60px;
+    content: "";
+    height: 400px;
+    width: 110px;
+    position: absolute;
+    right: 0;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #AB4747;
+    transform: rotateY(-90deg) translateX(-54px);
+    border: solid 3px black;
+    /* border-top-left-radius: 5%; */
+    color: white;
+    text-align: center;
+    font-size: 90%;
+  }
+
+.backBook {
   position: absolute;
-  right: 0;
-  left: -300px;
-  top: 0;
-  bottom: 0;
+  content: '';
+  height: 400px;
+  width: 300px;
   margin: auto;
   background: #AB4747;
-  transform: rotateY(-80deg) translateX(-30px);
+  transform: rotateY(180deg) translateZ(110px) translateX(0px) rotateX(0deg);
   border: solid 3px black;
-  border-top-left-radius: 5%;
-  color: white;
   text-align: center;
-  font-size: 90%;
+  color: white;
 }
 
 .page {
@@ -270,4 +146,10 @@ body {
 .turnOver {
   transform: rotateY(-180deg);
   box-shadow: 0 5px 20px rgba(0,0,0,1);
+}
+
+
+@keyframes rotate {
+  0% { -webkit-transform: rotateY(0); }
+  100% { -webkit-transform: rotateY(360deg); }
 }
