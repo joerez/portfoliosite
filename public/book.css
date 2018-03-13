@@ -144,7 +144,7 @@ body {
   transform-origin: left;
   transform: rotateY(0deg);
   left: 0px;
-  z-index: 22;
+  z-index: 25;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,4 +192,22 @@ body {
 @keyframes rotate {
   0% { -webkit-transform:  rotateY(0) rotateX(0); }
   100% { -webkit-transform:  rotateY(360deg) rotateX(360deg); }
+}
+
+
+
+/******SIGN BOOK*******/
+
+.signBook {
+  position: absolute;
+  z-index: 30;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  background: #2980b9;
+  display: none;
+  height: 300px;
+  width: 300px;
+  border-radius: 4px;
+  opacity: 1;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.3);
 }

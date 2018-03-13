@@ -29,6 +29,13 @@
     Page four
   </div>
 
+  {{#each signatures}}
+  <div class="page pagecontent signature">
+    {{this.name}}
+    <br>
+    {{this.title}}
+  </div>
+  {{/each}}
 
   <div class="page pagecontent thirdPage">
     Page three
@@ -48,8 +55,11 @@
 
 </div>
 
+<button class="signbutton">Sign Book</button>
 
+<div class="signBook">
 
+</div>
 
 <h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>
 <script src="/book.js"></script>

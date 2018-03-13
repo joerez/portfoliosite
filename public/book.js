@@ -17,7 +17,8 @@ $('.cover').on("click", function() {
 
   $('.book').css("transform", "rotateY(0deg) rotateX(-0deg) scale(1)");
   $('.book').removeClass('hoveit');
-   $('.cover').css('transform', 'rotateY(-180deg)').css("color", "brown");
+   $('.cover').css('transform', 'rotateY(-180deg)');
+   $('.cover').css("color", "brown");
    $(this).css('z-index', '20');
 })
 
@@ -44,9 +45,16 @@ newPage('.secondPage');
 
 newPage('.thirdPage');
 
+newPage('.signature');
+
 newPage('.fourthPage');
 
 // newPage('.fifthPage');
 
+
+$('.signbutton').on("click", function() {
+  $('.signBook').show();
+  $('.signBook').addClass('woah blazingStar');
+})
 
 })
