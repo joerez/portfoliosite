@@ -13,7 +13,7 @@ body {
   margin: auto;
   height: 400px;
   width: 300px;
-  background: brown;
+  /*background: brown;*/
   perspective: 1400px;
   border: solid 1px black;
   transition: all 1s;
