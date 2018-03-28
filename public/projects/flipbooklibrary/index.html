@@ -1,0 +1,132 @@
+<!--
+
+WELCOME TO THE SOURCE CODE!
+
+This should walk you through how to set up a flipbook for yourself. Feel free to copy and paste
+everything from the bookContainer div onward. That will get you started.
+
+Also follow the comments in the book.css and book.js files.
+
+If anything is unclear, please leave an issue in the github repository: https://github.com/joerez/flipbook-library
+
+Happy flipping!
+- Joe Rezendes
+
+-->
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Flipbook Framework</title>
+
+  <!-- This script is just for my github buttons, please ignore. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!--include before personal stylesheet-->
+  <link rel="stylesheet" href="book.css">
+
+</head>
+<body style="background: powderblue">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!--this is the world your book lives in-->
+<div class="bookContainer">
+
+
+  <!--this is the whole book-->
+  <div class="book hoveit">
+
+    <!--the top of your book - shows pages-->
+    <div class="bookTop"></div>
+
+    <!--this is the side of your book where you'll put a title, author, or anything else-->
+    <div class="bookSide">
+      <p>Flipbook Library</p>
+      <p>By: <a style="color: white; transition: all 1000ms;" href="www.joerezendes.com/">Joe Rezendes</a></p>
+    </div>
+
+    <!--this is the side of the book that has pages-->
+    <div class="bookSide2"></div>
+
+    <!--this is the backside of your book. Put whatever you'd like here.-->
+    <div class="page backBook">Back of book</div>
+
+    <!--this is the bottom of your book. It shows pages.-->
+    <div class="bookBottom"></div>
+
+    <!--this is the cover of your book. Put your title here along with anything else-->
+    <div class="page cover">
+      <h1>Flipbook Library</h1>
+      <p>By: <a class="author" href="www.joerezendes.com/">Joe Rezendes</a></p>
+      <!-- Place this tag where you want the button to render. -->
+    </div>
+
+    <!--display your book pages in descending order. New pages are added to the top here.
+        It's important you give each page the page and pagecontent class, along with a pagenumber class-->
+
+    <div class="page pagecontent fifthPage bookBack">
+      <a style="color: white;" href="https://github.com/joerez/flipbook-library">Or check out
+      <br>
+      the documentation
+      <br>
+      on GitHub!</a>
+    </div>
+
+
+    <div class="page pagecontent fourthPage">
+      Simply check out
+      <br>
+      the source code!
+    </div>
+
+
+    <div class="page pagecontent thirdPage">
+      Want to set one up
+      <br>
+      For yourself?
+    </div>
+
+    <div class="page pagecontent secondPage">
+      That's because it's
+      <br>
+      easy to use and customize!
+      <br><br>
+      You can even change
+      <br>
+      It's 3D orientation!
+    </div>
+
+    <div class="page pagecontent firstPage">
+      This is a simple
+      <br>
+      3D Flipbook!
+      <br><br>
+      This demo as
+      <br>
+      bare-bones as possible.
+    </div>
+
+  </div><!--book-->
+
+  <style>
+    .belowbox {
+      position: absolute;
+      left: 0; right: 0; bottom: 2rem;
+      margin-left: auto; margin-right: auto;
+      width: 20rem;
+    }
+  </style>
+  <div class="belowbox">
+    <center>
+    <a class="github-button" href="https://github.com/joerez/flipbook-library" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star joerez/flipbook-library on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/joerez" data-size="large" data-show-count="true" aria-label="Follow @joerez on GitHub">Follow @joerez</a>
+    <br><br><a href="https://github.com/joerez/flipbook-library" >Check out documentation</a>
+  </div>
+</div><!--bookContainer-->
+
+
+<!--Your book script should go anywhere after you close your bookContainer-->
+<script src="./book.js"></script>
+</body>
