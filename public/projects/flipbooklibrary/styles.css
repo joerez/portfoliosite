@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+background: #2c3e50;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70vh;
+  width: 100%;
+  background: #ecf0f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.herowords {
+  z-index: 50;
+}
+
+.cta {
+  background-color: rgba(253, 253, 253, 1);
+  color: #616161;
+  border-radius: 40px;
+  border: 1px solid #C1C1C1;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 200ms;
+  display: inline-block;
+  z-index: 60;
+}
+
+.cta:hover {
+  display: inline-block;
+  transform: scale(1.2);
+  margin-right: 10px;
+  margin-left: 10px;
+  z-index: 60;
+}
+
+.section2 {
+  position: absolute;
+  top: 70vh;
+  left: 0;
+  background: #3498db;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.sec2con {
+  width: 40rem; padding-bottom: 1.5rem;"
+}
+
+.section3 {
+  position: absolute;
+  top: 99vh;
+  background: #2c3e50;
+  height: 30rem;
+  width: 100%;
+}
+
+/* No greater than 900px, no less than 300px */
+@media (max-width:900px) and (min-width:300px) {
+
+.hero {
+  height: 30rem;
+  width: 100%;
+}
+
+.herowords {
+  position: absolute;
+  top: 5rem;
+}
+
+#book1 {
+  display: none;
+}
+
+.section2 {
+  top: 20rem;
+  height: 20rem;
+}
+
+.sec2con::after {
+  content: 'See full demo on desktop device';
+  display: block;
+  margin-top: 10px;
+}
+
+.sec2con {
+  width: auto;
+  transform: scale(.8);
+}
+
+.section3 {
+  display: none;
+}
+
+
+}​

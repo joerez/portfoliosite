@@ -6,7 +6,7 @@
  * Github - https://github.com/joerez/flipbook-library
  *
  * Copyright (c) 2018 Joe Rezendes
- */ 
+ */
 
 
 //This function creates a new page when you call it.
@@ -27,9 +27,9 @@ $('.cover').on("click", function() {
   //you can change these rotations to set the default state of the book when you flip through pages.
   $('.book').css("transform", "rotateY(-30deg) rotateX(-0deg) scale(1)");
   $('.book').removeClass('hoveit');
-   $('.cover').css('transform', 'rotateY(-180deg)');
+   $(this).css('transform', 'rotateY(-180deg)');
    //this changes the color of the text to the same color of the page so it isn't visible.
-   $('.cover').css("color", "brown");
+   $(this).css("color", "brown");
    $('.author').css("color", "brown");
    $(this).css('z-index', '20');
 })
