@@ -23,7 +23,7 @@ $(document).ready(function()
   $('.proceed').on("click", function() {
     $('.heaven').fadeIn(1000);
     $('.preloader').fadeOut(1000);
-
+    $('.landingpage').hide();
     //heaven typed.js
     var options2 = {
       strings: ["WELCOME CHILD", "THIS IS YOUR TRUE HOME", "THIS IS WHERE YOU CAME FROM", "BUT YOU ABANDONED ME.", "AND SO I CASTED YOU OUT.", "INTO THE <span style='color: red; background: yellow'>FIRE</span> WITH YOU."],
@@ -154,6 +154,7 @@ $('#continueadventure2').on("click", function() {
   $('.codingforkids').hide(10);
 
   $('.preloader').hide(10);
+  $('.landingpage').hide();
 
   $('.finalform').fadeIn(2000, function() {
     $('.finalform').css("display", "flex");
