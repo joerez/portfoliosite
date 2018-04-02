@@ -670,9 +670,12 @@ body, html {
 .landing1 {
   position: absolute;
   top: 100vh;
-  height: 30rem;
+  height: 60rem;
   width: 100%;
-  background: blue;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://www.milestonesfoto.com/blog/wp-content/uploads/2015/09/Liberty-Lions-Homecoming-Parade36-2015.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .heroarrow {
