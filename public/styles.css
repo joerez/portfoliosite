@@ -721,6 +721,60 @@ body, html {
   transform: rotateY(180deg) scale(.9);
 }
 
+/****************
+projects
+****************/
+
+.projects {
+    position: absolute;
+    top: calc(100vh + 60rem);
+    height: 60rem;
+    width: 100%;
+    background: #2c3e50;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.projectcontainer {
+  height: 60rem;
+  width: 80%;
+  perspective: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  transform: translateX(30vw) translateY(-60px) rotateX(0deg) rotateZ(30deg) scale(.6) !important;
+}
+
+.projimg {
+  width: 300px;
+  transition: all 400ms;
+  transform: rotateX(15deg);
+  border-radius: 8px;
+}
+
+.projimg:hover {
+  transform: rotateX(-5deg) scale(1.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,.6);
+}
+
+.projecttext {
+  width: 30%;
+}
+
+.project {
+  transform-style: preserve-3d;
+  margin: 20px;
+  transition: all 1s;
+}
+
+.project:hover {
+}
+
 /* No greater than 900px, no less than 300px */
 @media (max-width:900px) and (min-width:300px) {
   .landing1 {
