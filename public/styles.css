@@ -728,7 +728,7 @@ projects
 .projects {
     position: absolute;
     top: calc(100vh + 60rem);
-    height: 60rem;
+    height: 80rem;
     width: 100%;
     background: #2c3e50;
     display: flex;
@@ -739,7 +739,7 @@ projects
 }
 
 .projectcontainer {
-  height: 60rem;
+  height: 80rem;
   width: 80%;
   perspective: 800px;
   display: flex;
