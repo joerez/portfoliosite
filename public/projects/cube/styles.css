@@ -1,0 +1,108 @@
+html, body {
+  margin: 0;
+}
+
+.cube-habitat {
+  height: 100vh;
+  width: 100%;
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  background: linear-gradient(rgba(155, 89, 182,1.0), rgba(142, 68, 173,1.0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cube {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(-0deg) rotateX(0deg) scale(1);
+  height: 300px;
+  width: 300px;
+  /*background: black;*/
+  transition: all 1s;
+  /*animation: spin 10s infinite linear;*/
+}
+
+.side {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0,.4);
+  border: solid 1px black;
+  border-radius: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+  transform: translateZ(-200px) rotateY(180deg);
+
+}
+
+.back {
+  transform: rotateY(-270deg) translateX(200px);
+	transform-origin: top right;
+}
+
+.top {
+  transform: rotateY(270deg) translateX(-200px);
+  transform-origin: center left;
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+}
+
+.left {
+  transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+}
+
+.right {
+  transform: translateZ(100px);
+}
+
+.neg90-y {
+  transform: rotateY(-90deg);
+}
+
+.neg90-x {
+  transform: rotateX(-90deg);
+}
+
+.neg90-x-90-y {
+  transform: rotateX(-0deg) rotateY(90deg);
+}
+
+.pos90-x-neg90y {
+  transform: rotateX(90deg) rotateY(-90deg);
+}
+
+.five {
+  transform: rotateX(-180deg) rotateY(-0deg);
+}
+
+#three {
+  transform: rotateX(-190deg);
+}
+
+#five {
+  transform: rotate(90deg) rotateY(180deg);
+}
+
+#six {
+  transform: rotate(180deg)
+}
+
+.reset {
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+@keyframes spin {
+	from { transform: rotateY(0) rotateX(0); }
+	to { transform: rotateY(360deg) rotateX(360deg); }
+}
