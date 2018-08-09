@@ -739,6 +739,8 @@ projects
 }
 
 .projectcontainer {
+  position: absolute;
+  top: calc(100vh + 60rem);
   height: 80rem;
   width: 80%;
   perspective: 800px;
@@ -747,14 +749,14 @@ projects
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
-  transform: translateX(30vw) translateY(-60px) rotateX(0deg) rotateZ(30deg) scale(.6) !important;
+  transform: translateX(20vw) translateY(-60px) rotateX(0deg) rotateZ(30deg) scale(.6) !important;
 }
 
 .projimg {
   width: 300px;
   transition: all 400ms;
   transform: rotateX(15deg);
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .projimg:hover {
@@ -763,7 +765,10 @@ projects
 }
 
 .projecttext {
+  position: absolute;
+  top: calc(100vh + 60rem);
   width: 30%;
+  color: black;
 }
 
 .project {
@@ -773,6 +778,12 @@ projects
 }
 
 .project:hover {
+}
+
+canvas {
+  position: absolute;
+  top: calc(100vh + 60rem);
+  background: black;
 }
 
 /* No greater than 900px, no less than 300px */
