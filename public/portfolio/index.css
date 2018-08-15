@@ -301,6 +301,7 @@ nav.open {
 @media (max-width:900px) and (min-width:300px) {
 
 .hero-title {
+  margin-top: 4rem;
   font-size: 3rem;
 }
 
@@ -323,5 +324,16 @@ nav.open {
   left: -50%;
 }
 
+.nav.open {
+  width: 45%;
+}
+
+.portfolio {
+  width: 70%;
+}
+
+.aboutme {
+  width: 70%;
+}
 
 }
