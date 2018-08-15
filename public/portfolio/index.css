@@ -132,6 +132,8 @@ html, body {
 
 @media (max-width:900px) and (min-width:300px) {
 
-
+.hero-title {
+  font-size: 8rem;
+}
 
 }
