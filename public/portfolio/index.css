@@ -74,7 +74,7 @@ html, body {
   }
 
   50% {
-    filter: brightness(8);
+    filter: brightness(5);
   }
 
 }
@@ -88,7 +88,7 @@ html, body {
   filter: brightness(40);
   animation: Joe;
   animation-fill-mode: both;
-  animation-duration: 20s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
