@@ -324,15 +324,19 @@ nav.open {
   left: -50%;
 }
 
-.nav.open {
+nav.open {
   width: 45%;
 }
 
 .portfolio {
-  width: 70%;
+  width: 80%;
 }
 
-.aboutme {
+.skills-content {
+  width: 80%;
+}
+
+.about-me {
   width: 70%;
 }
 
