@@ -12,6 +12,7 @@ html, body {
   -webkit-font-smoothing: subpixel-antialiased;
   overflow-x: hidden;
   font-family: roboto;
+  perspective: 800px;
 }
 
 .hero {
@@ -134,6 +135,126 @@ html, body {
   font-family: roboto;
   font-weight: 100;
 }
+
+
+
+@keyframes navigateOut {
+  from {
+    opacity: 1;
+  }
+
+
+  to {
+    transform: translate3d(0, -1000px, 0px) rotateX(100deg);
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    }
+
+}
+
+@keyframes navigateIn {
+  from {
+    transform: translate3d(0, -500px, 0px) rotateX(90deg) rotateY(30deg);
+    opacity: 0;
+  }
+
+
+  to {
+    transform: translate3d(0, 0, 0) rotateX(0deg);
+    opacity: 1;
+    }
+
+}
+
+
+.navigate-out {
+  transform-style: preserve-3d;
+  animation-name: navigateOut;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  backface-visibility: visible;
+}
+
+
+.navigate-in {
+  transform-style: preserve-3d;
+  animation-name: navigateIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  backface-visibility: visible;
+}
+
+@keyframes nav-expo {
+  0% {
+    /*box-shadow: 1px 0px 1px 1px rgba(255,0,0,.3);*/
+  }
+
+  50% {
+    box-shadow: 0px 0px 1px 1px rgba(0,0,255,.3);
+  }
+}
+
+.nav-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10000;
+  border-radius: 50%;
+  padding: .8rem;
+  background: white;
+  color: rgba(0,0,255,.7);
+  border: solid 1px rgba(0,0,255,.3);
+  cursor: pointer;
+  animation-name: nav-expo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  transition: all 200ms;
+}
+
+.nav-btn.open {
+  transform: scale(1.2) translate3d(10px, 10px, 0px);
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 500;
+  height: 100%;
+  width: 0%;
+  background: rgba(0,0,0,.7);
+  color: rgba(0,0,0,0);
+  transition: all 200ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav.open {
+  height: 100%;
+  width: 100%;
+  color: rgba(255,255,255,1)
+}
+
+.nav-h1 {
+  display: none;
+}
+
+.nav-h1.open {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+
+
+
 
 
 @media (max-width:900px) and (min-width:300px) {
