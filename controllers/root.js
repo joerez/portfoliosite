@@ -4,9 +4,14 @@ const Signature = require('../models/signature');
 
 module.exports = (app) => {
 
+  app.get('/', (req, res) => {
+    res.render('portfolio');
+  })
 
-//root
-app.get('/', (req, res) => {
+
+
+//old website
+app.get('/old', (req, res) => {
 
 
       res.render('index');

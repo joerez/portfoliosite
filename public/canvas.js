@@ -13,11 +13,29 @@ function distance(x1, y1, x2, y2) {
     return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2))
 }
 
+function getPosition(el) {
+  var xPosition = 0;
+  var yPosition = 0;
+ 
+  while (el) {
+    xPosition += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+    yPosition += (el.offsetTop - el.scrollTop + el.clientTop);
+    el = el.offsetParent;
+  }
+  return {
+    x: xPosition,
+    y: yPosition
+  };
+}      
 const canvas = document.querySelector('canvas')
+
+const canvasPos = getPosition(canvas);
+
+
 const c = canvas.getContext('2d')
 
 canvas.width = innerWidth
-canvas.height = innerHeight + 200
+canvas.height = innerHeight
 
 const mouse = {
     x: innerWidth / 2,
@@ -32,9 +50,10 @@ const colors = [
 
 // Event Listeners
 addEventListener('mousemove', event => {
-    mouse.x = event.clientX
-    mouse.y = event.clientY
+    mouse.x = event.clientX - canvasPos.x;
+    mouse.y = event.clientY - canvasPos.y;
 })
+
 
 addEventListener('resize', () => {
     canvas.width = innerWidth
@@ -51,7 +70,7 @@ function Particle(x, y, radius, color) {
     this.color = color
     this.radians = Math.random() * Math.PI * 2;
     this.velocity = 0.05;
-    this.distanceFromCenter = randomIntFromRange(50, 120)
+    this.distanceFromCenter = randomIntFromRange(40, 90)
     this.lastMouse = {x: x, y: y}
 
     this.update = function() {
