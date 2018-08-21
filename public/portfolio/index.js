@@ -19,6 +19,7 @@ portfolio.addEventListener("click", function() {
   toggleNav();
   first.classList.remove('navigate-in');
   first.classList.add('navigate-out');
+  second.classList.remove('none');
   second.classList.add('navigate-in');
 })
 

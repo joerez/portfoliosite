@@ -192,6 +192,7 @@ html, body {
   to {
     transform: translate3d(0, 0, 0) rotateX(0deg);
     opacity: 1;
+    visibility: visible;
     }
 
 }
@@ -204,6 +205,7 @@ html, body {
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   backface-visibility: visible;
+  z-index: 1;
 }
 
 
@@ -214,7 +216,9 @@ html, body {
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   backface-visibility: visible;
+  z-index: 2;
 }
+
 
 @keyframes nav-expo {
   0% {
@@ -292,10 +296,13 @@ nav.open {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate3d(0, -500px, 0px) rotateX(90deg) rotateY(30deg);
   opacity: 0;
+  transform: translate3d(0, -500px, 0px) rotateX(90deg) rotateY(30deg);
 }
 
+.none {
+  visibility: hidden;
+}
 
 
 @media (max-width:900px) and (min-width:300px) {
