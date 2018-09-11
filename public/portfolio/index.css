@@ -96,6 +96,18 @@ html, body {
   animation-iteration-count: infinite;
 }
 
+
+
+
+.top-bar {
+  height: 70px;
+  width: 100%;
+  background: #4834d4;
+}
+
+
+
+
 .skills {
   /*background: #ecf0f1;*/
   display: flex;
@@ -111,8 +123,9 @@ html, body {
 }
 
 .skills-content {
-  width: 30%;
+  width: 100%;
   font-weight: 200;
+  padding-left: 3rem;
 }
 
 .bolder {
@@ -125,8 +138,9 @@ html, body {
 }
 
 .about-me {
-  width: 30%;
+  width: 100%;
   font-weight: 200;
+  padding-left: 3rem;
 }
 
 
@@ -139,11 +153,13 @@ html, body {
 }
 
 .portfolio {
-  width: 30%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 2rem;
+  padding-left: 3rem;
+
 }
 
 .port-img {
@@ -293,6 +309,7 @@ nav.open {
 
 
 .second {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -337,15 +354,16 @@ nav.open {
 }
 
 .portfolio {
-  width: 80%;
+  padding-left: 1rem
 }
 
 .skills-content {
-  width: 80%;
+  padding-left: 1rem
+
 }
 
 .about-me {
-  width: 70%;
+  padding-left: 1rem
 }
 
 }
