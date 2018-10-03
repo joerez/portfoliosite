@@ -22,6 +22,11 @@ html, body {
   top: 0;
   left: 0;
   z-index: 4;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
 .hero-title {
@@ -324,6 +329,9 @@ nav.open {
 
 @media (max-width:900px) and (min-width:300px) {
 
+.hero {
+}
+
 .hero-title {
   margin-top: 4rem;
   font-size: 3rem;
@@ -345,7 +353,10 @@ nav.open {
 }
 
 .joe {
+  animation: none;
   left: -50%;
+  filter: none;
+  display: none;
 }
 
 nav.open {
