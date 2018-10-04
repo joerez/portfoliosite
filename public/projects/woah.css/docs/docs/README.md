@@ -4,7 +4,9 @@
 <p align="center"><img alt="Woah!!!" src="https://github.com/joerez/Woah.css/blob/master/Woah.css.gif?raw=true"></p>
 
 Woah.css is a CSS Animation Library for eccentric web developers.
+
 View demo here: http://www.joerezendes.com/projects/Woah.css/
+
 Write up: https://medium.com/@joerezendes_91375/need-stars-on-github-21a2fab3550d
 ## Installation
 
