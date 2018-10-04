@@ -333,6 +333,7 @@ nav.open {
 }
 
 .no-dec {
+  display: inline-block;
   text-decoration: none;
   color: black;
 }
