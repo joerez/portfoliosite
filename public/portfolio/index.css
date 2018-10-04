@@ -163,13 +163,13 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 2rem;
-  padding-left: 3rem;
+  margin-left: 3rem;
 
 }
 
 .port-img {
   border: solid 1px black;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   transition: all 300ms;
 }
 
@@ -191,11 +191,12 @@ html, body {
 @keyframes navigateOut {
   from {
     opacity: 1;
+    backface-visibility: hidden;
   }
 
 
   to {
-    transform: translate3d(0, -1000px, 0px) rotateX(100deg);
+    transform: rotateY(0deg);
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -205,13 +206,12 @@ html, body {
 
 @keyframes navigateIn {
   from {
-    transform: translate3d(0, -500px, 0px) rotateX(90deg) rotateY(30deg);
     opacity: 0;
   }
 
 
   to {
-    transform: translate3d(0, 0, 0) rotateX(0deg);
+    transform: rotateY(0deg);
     opacity: 1;
     visibility: visible;
     }
@@ -225,7 +225,7 @@ html, body {
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  backface-visibility: visible;
+  backface-visibility: none;
   z-index: 1;
 }
 
@@ -236,7 +236,7 @@ html, body {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  backface-visibility: visible;
+  backface-visibility: none;
   z-index: 2;
 }
 
@@ -319,15 +319,83 @@ nav.open {
   top: 0;
   left: 0;
   opacity: 0;
-  transform: translate3d(0, -500px, 0px) rotateX(90deg) rotateY(30deg);
 }
 
 .none {
   visibility: hidden;
 }
 
+.article-container {
+  width: 40rem;
+  border: solid 1px black;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.no-dec {
+  text-decoration: none;
+  color: black;
+}
+
+.blue {
+  color: #3498db;
+}
+
+.projects-container {
+}
+
+.proj-img {
+  height: 500px;
+}
+
+.proj-div {
+  /*width: 888px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.proj-div-reverse {
+  /*width: 888px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.proj-content {
+  margin-left: 1rem;
+  width: 20rem;
+}
+
+.right-side {
+  margin-left: -1rem !important;
+  margin-right: 1rem;
+}
+
+.proj-content h1 {
+  margin: 0;
+  padding: 0;
+}
 
 @media (max-width:900px) and (min-width:300px) {
+
+  .proj-div-reverse {
+    margin-top: 1rem;
+    flex-direction: column-reverse;
+  }
+
+.proj-img {
+  height: 200px;
+}
+
+.article-container {
+  width: 20rem;
+}
 
 .hero {
 }
