@@ -35,7 +35,7 @@ const canvasPos = getPosition(canvas);
 const c = canvas.getContext('2d')
 
 canvas.width = innerWidth
-canvas.height = innerHeight;
+canvas.height = innerHeight 
 
 const mouse = {
     x: innerWidth / 2,
