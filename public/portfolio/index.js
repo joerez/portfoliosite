@@ -7,6 +7,8 @@ const second = document.getElementById('second');
 const home = document.getElementById('home');
 const portfolio = document.getElementById('portfolio');
 
+const portfolioBar = document.getElementById('portfolio-bar');
+
 
 const navLinks = document.getElementsByClassName('nav-h1');
 
@@ -17,17 +19,33 @@ navBtn.addEventListener("click", function() {
 
 portfolio.addEventListener("click", function() {
   toggleNav();
+  second.style.display = 'block';
   first.classList.remove('navigate-in');
   first.classList.add('navigate-out');
   second.classList.remove('none');
   second.classList.add('navigate-in');
+
 })
+
+portfolioBar.addEventListener("click", function() {
+  second.style.display = 'block';
+  first.classList.remove('navigate-in');
+  first.classList.add('navigate-out');
+  second.classList.remove('none');
+  second.classList.add('navigate-in');
+
+
+})
+
 
 home.addEventListener("click", function() {
   toggleNav();
   second.classList.remove('navigate-in');
   second.classList.add('navigate-out');
   first.classList.add('navigate-in');
+  second.style.display = 'none';
+
+
 })
 
 

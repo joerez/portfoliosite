@@ -31,7 +31,7 @@ html, body {
 
 .hero-title {
   padding: 0;
-  font-size: 15rem;
+  font-size: 12rem;
   font-family: roboto;
   font-weight: 200;
   margin: 0;
@@ -41,7 +41,7 @@ html, body {
 
 .underline {
   margin-left: 1rem;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .hero-sub-title {
@@ -73,7 +73,7 @@ html, body {
 
 .minimal-hover:hover {
   color: white;
-  text-shadow: 0px 1px 8px rgba(0,0,0,.9);
+  text-shadow: 0px 1px 8px rgba(0,0,110,.9);
 }
 
 @keyframes Joe {
@@ -89,16 +89,17 @@ html, body {
 
 .joe {
   position: absolute;
-  top: 0;
-  left: 30%;
+  top: 0%;
+  left: 0%;
   z-index: 3;
   height: 100vh;
-  filter: brightness(40);
+  display: none;
+  /*filter: brightness(40);
   animation: Joe;
   animation-fill-mode: both;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;*/
 }
 
 
@@ -110,7 +111,13 @@ html, body {
   background: #4834d4;
 }
 
-
+.bottom-bar {
+  position: fixed;
+  bottom: 70px;
+  height: 70px;
+  width: 100%;
+  background: #4834d4;
+}
 
 
 .skills {
@@ -190,6 +197,7 @@ html, body {
 
 @keyframes navigateOut {
   from {
+    display: block;
     opacity: 1;
     backface-visibility: hidden;
   }
@@ -319,6 +327,7 @@ nav.open {
   top: 0;
   left: 0;
   opacity: 0;
+  display: none;
 }
 
 .none {
@@ -381,6 +390,32 @@ nav.open {
 .proj-content h1 {
   margin: 0;
   padding: 0;
+}
+
+.bottom-margin {
+  margin-bottom: 1rem;
+}
+
+.bottom-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-button {
+  background: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem; padding-bottom: .5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: #8e44ad;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.portfolio-button:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width:900px) and (min-width:300px) {
