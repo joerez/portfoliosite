@@ -2,7 +2,7 @@
 
 # Flibook.js <small>1.0</small>
 
-> A magical documentation site generator.
+> Create fully customizable 3D Flipbooks!
 
 * Create simple 3D Flipbooks
 * Fully customizable
