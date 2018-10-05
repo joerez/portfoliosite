@@ -427,6 +427,11 @@ nav.open {
 
 .proj-img {
   height: 200px;
+  /*margin-left: -2.3rem;*/
+}
+
+.port-img {
+  margin-left: -1.3rem;
 }
 
 .article-container {
@@ -469,16 +474,17 @@ nav.open {
 }
 
 .portfolio {
-  padding-left: 1rem
+  width: 85%;
 }
 
 .skills-content {
-  padding-left: 1rem
-
+  padding-left: 1rem;
+  width: 98%;
 }
 
 .about-me {
-  padding-left: 1rem
+  padding-left: 1rem;
+  width: 92%;
 }
 
 }
