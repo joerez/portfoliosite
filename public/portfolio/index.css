@@ -25,13 +25,14 @@ html, body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: calc(100vh - 70px);
   width: 100%;
   text-align: center;
 }
 
 .hero-title {
   padding: 0;
-  font-size: 12rem;
+  font-size: 8rem;
   font-family: roboto;
   margin: 0;
   color: #2E3438;
@@ -112,7 +113,7 @@ html, body {
 
 .bottom-bar {
   position: fixed;
-  bottom: 70px;
+  bottom: 0px;
   height: 70px;
   width: 100%;
   background: #4834d4;
