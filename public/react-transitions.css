@@ -1,3 +1,15 @@
+/*!
+ * React Transitions - http://joerezendes.com/projects/react-transitions
+ * Version - 1.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Github - https://github.com/joerez/react-transitions
+ *
+ * Copyright (c) 2018 Joe Rezendes
+ */
+
+
+
 .transition-container {
   perspective: 800px;
 }
