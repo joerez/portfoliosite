@@ -17,6 +17,10 @@ app.get('/old', (req, res) => {
 
 })
 
+app.get('/scroll', (req, res) => {
+  res.render('scroll');
+})
+
 //book of life
 app.get('/bookoflife', (req, res) => {
   res.render('book');

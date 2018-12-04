@@ -1,0 +1,38 @@
+body {
+  background-color:#c0edec;
+  color: #ccc;
+	font-family: helvetica;
+	font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  color:white;
+  margin: 0;
+}
+
+#move{
+  height:1600px;
+  width:100%;
+  background:white;
+}
+#animation{
+  height:100px;
+  width:100px;
+  background:red;
+  position:absolute;
+  left:10px;
+  top:450px;
+}
+
+#test{
+  width:100%;
+  height:400px;
+  background:#5386b2;
+}
+
+.extra {
+  height: 300px;
+  width: 100%;
+}
