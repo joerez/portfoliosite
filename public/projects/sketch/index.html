@@ -1,0 +1,182 @@
+<head>
+  <style>
+  main {
+    height: 100vh;
+    width: 100%;
+  }
+
+  html body {padding: 0; margin: 0;
+  width: 100vw; overflow-x: hidden;}
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 6rem;
+    height: 50px;
+    width: 95%;
+    align-items: center;
+    background-blend-mode: color-dodge;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+  nav a { color: white;   background-blend-mode: color-dodge;
+    font-family: sans-serif;
+}
+
+h1 {
+  position: absolute;
+  top: 7rem;
+  left: 13rem;
+  font-family: sans-serif;
+  font-weight: 200;
+  z-index: 100;
+}
+
+button {
+  position: absolute;
+  top: 12rem;
+  left: 13rem;
+  font-family: sans-serif;
+  font-weight: 200;
+  z-index: 100;
+  width: 14rem;
+  height: 40px;
+  background: rgb(213, 52, 211);
+  color: white;
+  border: none;
+  font-size: 1.3rem;
+  box-shadow: 30px 30px 2px 1px rgba(240,80,80,.3);
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(80,80,180,1);
+  box-shadow: 30px 30px 2px 1px rgba(80,80,180,.6);
+  transform: translateY(-2px);
+}
+
+
+#Oval-2 {
+  transform: scaleX(3);
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px;);
+  }
+}
+
+#Oval-3 {
+  animation-name: move;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes stretch {
+  25% {
+    transform: skewX(-2deg);
+  }
+  75% {
+    transform: skewX(2deg);
+  }
+}
+
+
+#Oval {
+  animation-name: stretch;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+
+}
+
+img {z-index: 4; position: absolute;}
+  </style>
+
+</head>
+
+<body>
+    <nav><a style="color: white;">Logo</a><a>Login</a></nav>
+
+    <h1>Startup Central.</h1>
+    <button>Download Now</button>
+<img src="https://uploads-ssl.webflow.com/5bff8886c3964a992e90d465/5c00fa3ad82b40e853c9952f_hero-3.svg" data-w-id="542adb68-622b-75f3-00de-0a3b58df5ff1" alt="" class="hero-image-2" style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg width="110%" height="110vh" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+        <defs>
+            <radialGradient cx="50%" cy="43.0871659%" fx="50%" fy="43.0871659%" r="159.868886%" gradientTransform="translate(0.500000,0.430872),scale(0.694224,1.000000),rotate(125.842578),translate(-0.500000,-0.430872)" id="radialGradient-1">
+                <stop stop-color="#1DC842" offset="0%"></stop>
+                <stop stop-color="#19AA38" offset="6.99716319%"></stop>
+                <stop stop-color="#148A2D" offset="17.6332001%"></stop>
+                <stop stop-color="#117426" offset="31.8005293%"></stop>
+                <stop stop-color="#0F6722" offset="48.6210525%"></stop>
+                <stop stop-color="#4E9B14" offset="100%"></stop>
+            </radialGradient>
+            <radialGradient cx="43.7147062%" cy="32.2382445%" fx="43.7147062%" fy="32.2382445%" r="78.5574397%" gradientTransform="translate(0.437147,0.322382),scale(1.000000,0.991506),rotate(97.700737),translate(-0.437147,-0.322382)" id="radialGradient-2">
+                <stop stop-color="#29DC5A" offset="0%"></stop>
+                <stop stop-color="#17BE37" offset="38.3638527%"></stop>
+                <stop stop-color="#24D34F" offset="45.399895%"></stop>
+                <stop stop-color="#27D956" offset="46.99381%"></stop>
+                <stop stop-color="#1FCC47" offset="54.2949692%"></stop>
+                <stop stop-color="#23D24D" offset="55.2943796%"></stop>
+                <stop stop-color="#1BC53F" offset="61.7744797%"></stop>
+                <stop stop-color="#22D04C" offset="68.5534389%"></stop>
+                <stop stop-color="#12B62D" offset="100%"></stop>
+            </radialGradient>
+            <path d="M1198.04331,512.456789 C1293.74788,367.606461 1536.07202,677.186312 1484.75187,234.781184 C1433.43171,-207.623943 1853.415,-333 1691.7452,-333 C1570.50094,-333 1273.11639,-87.9907161 1136.1097,133.102379 C1093.91253,201.197619 978.703027,193.484776 924.743125,201.197619 C708.946721,232.042815 1102.33873,657.307118 1198.04331,512.456789 Z" id="path-3"></path>
+            <filter x="-0.2%" y="-0.2%" width="100.5%" height="100.5%" filterUnits="objectBoundingBox" id="filter-4">
+                <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+                <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+                <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+                <feColorMatrix values="0 0 0 0 0.113663625   0 0 0 0 0.854804422   0 0 0 0 0.147019995  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+            </filter>
+            <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="631.436896%" gradientTransform="translate(0.500000,0.000000),scale(1.000000,0.313267),rotate(134.736021),translate(-0.500000,-0.000000)" id="radialGradient-5">
+                <stop stop-color="#1BC43E" offset="0%"></stop>
+                <stop stop-color="#23C644" offset="7.6645518%"></stop>
+                <stop stop-color="#26C747" offset="10.9483879%"></stop>
+                <stop stop-color="#38CB56" offset="12.6221598%"></stop>
+                <stop stop-color="#3DCD5B" offset="14.9017328%"></stop>
+                <stop stop-color="#2DC94D" offset="16.0195112%"></stop>
+                <stop stop-color="#30CA50" offset="26.6389854%"></stop>
+                <stop stop-color="#32CA51" offset="31.4888697%"></stop>
+                <stop stop-color="#48D064" offset="31.6336596%"></stop>
+                <stop stop-color="#7D5F08" offset="100%"></stop>
+            </radialGradient>
+        </defs>
+        <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Desktop-HD">
+                <path d="M155.763369,1223 C293.151583,1223 666.120954,1221.27457 666.120954,1101.64807 C666.120954,1044.79573 483.139178,1029.65401 454.399403,843.087456 C446.321088,790.646426 314.382,813.838449 242.287366,813.838449 C205.09749,813.838449 1.01382824,813.838449 1.01382824,706.551698 C1.01382824,638.423139 -93,919.152495 -93,1006.39707 C-93,1126.02356 18.3751538,1223 155.763369,1223 Z" id="Oval-2" fill="url(#radialGradient-1)"></path>
+                <g id="Oval">
+                    <use fill="url(#radialGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                </g>
+                <path d="M490.193238,576.855277 C679.626907,521.61825 833.193238,462.846557 833.193238,445.585027 C833.193238,428.323497 679.626907,369.551804 490.193238,314.314776 C300.759569,259.077749 147.193238,317.849442 147.193238,445.585027 C147.193238,573.320611 300.759569,632.092304 490.193238,576.855277 Z" id="Oval-3" stroke="#979797" fill="#1AC43D" transform="translate(490.193238, 445.585027) rotate(18.000000) translate(-490.193238, -445.585027) "></path>
+                <polygon id="Rectangle" fill="#19A838" points="841 683 1123 683 1123 894 720 863.496567 866.092803 788.5"></polygon>
+                <polygon id="Rectangle-2" fill="#19A838" points="919.020087 626 1204.32482 626 1125.69743 683 838 683"></polygon>
+                <polygon id="Rectangle-3" fill="url(#radialGradient-5)" points="1123.00007 538.471045 1279.99993 393 1280 853.45879 1123 894.170053"></polygon>
+            </g>
+        </g>
+    </svg>
+
+
+</body>
