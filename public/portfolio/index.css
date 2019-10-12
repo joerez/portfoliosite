@@ -19,7 +19,7 @@ html, body {
 
 .hero {
   position: absolute;
-  top: 0;
+  top: 70px;
   left: 0;
   z-index: 4;
   align-items: center;
@@ -32,6 +32,7 @@ html, body {
 
 .hero-title {
   padding: 0;
+  padding-top: 35px;
   font-size: 8rem;
   font-family: roboto;
   margin: 0;
@@ -59,7 +60,7 @@ html, body {
   display: inline-block;
   height: 5rem;
   margin-left: 1rem;
-  transition: all 5s;
+  transition: all 4.00s;
 }
 
 .icon-img:hover {
@@ -68,12 +69,12 @@ html, body {
 
 
 .minimal-hover {
-  transition: all 300ms;
+  transition: all 200ms;
 }
 
 .minimal-hover:hover {
   color: white;
-  text-shadow: 0px 1px 8px rgba(0,0,110,.9);
+  text-shadow: 0px 1px 20px rgba(0,0,110,.9);
 }
 
 @keyframes Joe {
@@ -109,11 +110,14 @@ html, body {
   height: 70px;
   width: 100%;
   background: #4834d4;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .bottom-bar {
   position: fixed;
-  bottom: 0px;
+  bottom: -66px;
   height: 70px;
   width: 100%;
   background: #4834d4;
@@ -230,7 +234,7 @@ html, body {
 .navigate-out {
   transform-style: preserve-3d;
   animation-name: navigateOut;
-  animation-duration: 1s;
+  animation-duration: 250ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   backface-visibility: none;
@@ -241,7 +245,7 @@ html, body {
 .navigate-in {
   transform-style: preserve-3d;
   animation-name: navigateIn;
-  animation-duration: 1s;
+  animation-duration: 250ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   backface-visibility: none;
@@ -260,7 +264,7 @@ html, body {
 }
 
 .nav-btn {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   left: 1rem;
   z-index: 10000;
@@ -276,7 +280,7 @@ html, body {
   justify-content: center;
   align-items: center;
   animation-name: nav-expo;
-  animation-duration: 1s;
+  animation-duration: 250ms;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
@@ -324,7 +328,7 @@ nav.open {
 .second {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 70px;
   left: 0;
   opacity: 0;
   display: none;
@@ -354,6 +358,15 @@ nav.open {
 .projects-container {
   display: flex;
   flex-direction: column;;
+}
+
+.hero-sub-title {
+  font-weight: 100;
+  color: #7f8c8d;
+}
+
+.hero-sub-title .minimal-hover:hover {
+  color: black !important;
 }
 
 .proj-img {
@@ -399,6 +412,7 @@ nav.open {
 }
 
 .bottom-bar {
+  top: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,66 +441,71 @@ nav.open {
     flex-direction: column-reverse;
   }
 
-.proj-img {
-  height: 200px;
-  /*margin-left: -2.3rem;*/
-}
+  .proj-img {
+    height: 200px;
+    /*margin-left: -2.3rem;*/
+  }
 
-.port-img {
-  margin-left: -2.2rem;
-}
+  .port-img {
+    margin-left: -2.2rem;
+  }
 
-.article-container {
-  width: 20rem;
-}
+  .article-container {
+    width: 20rem;
+  }
 
-.hero {
-}
+  .hero {
+  }
 
-.hero-title {
-  margin-top: 4rem;
-  font-size: 3rem;
-}
+  canvas {
+    display: none;
+  }
+  
 
-.underline {
-  margin-left: .1rem;
-}
+  .hero-title {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
 
-.hero-sub-title {
-  margin-left: none;
-  font-size: 1.5rem;
-  display: block;
-}
+  .underline {
+    margin-left: .1rem;
+  }
 
-.icon-img {
-  margin-top: 10px;
-  height: 3rem;
-}
+  .hero-sub-title {
+    margin-left: none;
+    font-size: 1.5rem;
+    display: block;
+  }
 
-.joe {
-  animation: none;
-  left: -50%;
-  filter: none;
-  display: none;
-}
+  .icon-img {
+    margin-top: 10px;
+    height: 3rem;
+  }
 
-nav.open {
-  background: rgb(0, 23, 112);
-  width: 45%;
-}
+  .joe {
+    animation: none;
+    left: -50%;
+    filter: none;
+    display: none;
+  }
 
-.portfolio {
-  width: 85%;
-}
+  nav.open {
+    background: rgb(0, 23, 112);
+    width: 45%;
+  }
 
-.skills-content {
-  padding-left: 1rem;
-  width: 98%;
-}
+  .portfolio {
+    width: 85%;
+  }
 
-.about-me {
-  padding-left: 1rem;
-  width: 92%;
-}
+  .skills-content {
+    padding-left: 1rem;
+    width: 98%;
+  }
+
+  .about-me {
+    padding-left: 1rem;
+    width: 92%;
+  }
 
 }
