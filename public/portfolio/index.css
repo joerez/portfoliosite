@@ -369,8 +369,12 @@ nav.open {
   color: black !important;
 }
 
+.proj-img-container {
+  width: 50%;
+}
+
 .proj-img {
-  height: 500px;
+  width: 100%;
 }
 
 .proj-div {
@@ -393,8 +397,9 @@ nav.open {
 
 
 .proj-content {
+  margin-top: 1rem;
   margin-left: 1rem;
-  width: 20rem;
+  width: 45%;
 }
 
 .right-side {
@@ -412,7 +417,7 @@ nav.open {
 }
 
 .bottom-bar {
-  top: 90vh;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -436,6 +441,16 @@ nav.open {
 
 @media (max-width:900px) and (min-width:300px) {
 
+  .portfolio {
+    width: 90%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .proj-img-container {
+    width: 100%;
+  }
+
   .proj-div-reverse {
     margin-top: 1rem;
     flex-direction: column-reverse;
@@ -446,9 +461,10 @@ nav.open {
     /*margin-left: -2.3rem;*/
   }
 
-  .port-img {
-    margin-left: -2.2rem;
+  .proj-content {
+    width: 100%;
   }
+
 
   .article-container {
     width: 20rem;
@@ -494,13 +510,10 @@ nav.open {
     width: 45%;
   }
 
-  .portfolio {
-    width: 85%;
-  }
 
   .skills-content {
     padding-left: 1rem;
-    width: 98%;
+    width: 97%;
   }
 
   .about-me {
