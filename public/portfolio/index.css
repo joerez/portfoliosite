@@ -339,10 +339,22 @@ nav.open {
 }
 
 .article-container {
-  width: 40rem;
-  border: solid 1px black;
+  width: 50%;
+  border: none;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 9px;
+  background: #ffffff;
+  box-shadow: 5px 5px 13px #d9d9d9, 
+              -5px -5px 13px #ffffff;
+    border: none;
+}
+
+.article-container:hover {
+  box-shadow: 5px 5px 13px #d9d9d9, 
+              -5px -5px 13px #ffffff;
+  border: none;
+  background: #fffcfc;
+  transform: translateY(-2px);
 }
 
 .no-dec {
@@ -352,7 +364,7 @@ nav.open {
 }
 
 .blue {
-  color: #3498db;
+  color: #252222;
 }
 
 .projects-container {
@@ -467,7 +479,7 @@ nav.open {
 
 
   .article-container {
-    width: 20rem;
+    width: 92%;
   }
 
   .hero {
