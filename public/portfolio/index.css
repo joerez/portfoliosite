@@ -63,8 +63,23 @@ html, body {
   transition: all 4.00s;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+
+}
+
 .icon-img:hover {
-  transform: rotate(720deg) scale(.9);
+  transform: rotate(720deg) scale(1.2);
+  /* animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
 }
 
 
