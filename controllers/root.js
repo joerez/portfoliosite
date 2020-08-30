@@ -8,12 +8,23 @@ module.exports = (app) => {
     res.render('portfolio');
   })
 
+  app.get('/projects', (req, res) => {
+    res.render('projects');
+  })
+
+
 
 
 //old website
-app.get('/old', (req, res) => {
+app.get('/old2', (req, res) => {
 
       res.render('index');
+
+})
+
+app.get('/old', (req, res) => {
+
+  res.render('portfolio-old');
 
 })
 
@@ -25,10 +36,6 @@ app.get('/scroll', (req, res) => {
 app.get('/bookoflife', (req, res) => {
   res.render('book');
 })
-
-app.post('')
-
-
 
 //SIGN THE BOOK
 app.post('/signbook', (req, res) => {

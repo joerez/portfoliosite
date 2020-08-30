@@ -1,0 +1,222 @@
+:root {
+    --container-size: 80%;
+    --brand: #5170ff;
+    --dark: #100f0d;
+    --yellow: #ffbe4a;
+    --red: #ff5b5b;
+    --pink: #d631c5;
+    --green: #20a4ae;
+}
+
+.blue {
+    color: var(--brand);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.red {
+    color: var(--red);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.green {
+    color: var(--green);
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    transition: all 150ms;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(4px 4px 2px rgba(0,0,0,.3));
+}
+
+.link-con {
+    display: flex;
+}
+
+.nav-link-box {
+    display: var(--container-size);
+    border-radius: 30% 70% 62% 38% / 29% 30% 70% 71%;
+    background: var(--brand);
+    border: solid 2px var(--brand);
+    padding: 20px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: all 200ms;
+}
+
+.nav-link-box:hover {
+    transform: translateY(-1px);
+    background: white;
+    border: solid 2px var(--brand);
+    color: var(--brand);
+    box-shadow: 12px 7px 1px rgba(0,0,0,.3);
+}
+
+/* MAIN */
+
+main {
+    width: var(--container-size);
+}
+
+.main-banner {
+    margin-top: 8px;
+    height: 400px;
+    width: 100%;
+    border-radius: 70% 30% 38% 62% / 50% 29% 71% 70%;
+    /* background: url('/images/Joe Rezendes Banner.png'); */
+    background: url('https://i.imgur.com/ftEsqEm.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border: solid 8px var(--brand);
+    transition: all 200ms;
+}
+
+.main-banner:hover {
+    box-shadow: 12px 7px 1px rgba(0,0,0,.3);
+    /* border-radius: 60% 20% 18% 32% / 10% 59% 21% 40%; */
+}
+
+.main-banner:active {
+    transform: translateY(-3px);
+}
+
+.about {
+    height: 100%;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 60% 20% 18% 32% / 10% 59% 21% 40%;
+    background-size: cover;
+    border: solid 8px var(--brand);
+    transition: all 200ms;
+    padding: 30px 40px;
+    padding-bottom: 175px;
+    padding-top: 47px;
+}
+
+.about:hover {
+    box-shadow: 12px 7px 1px rgba(0,0,0,.3);
+}
+
+.about:active {
+    transform: translateY(-3px);
+}
+
+
+.skills-heading {
+    display: inline-block;
+    color: var(--dark);
+    transition: 200ms all;
+}
+
+.about .cta-con {
+    display: block;
+    margin-top: 33px;
+}
+
+.about .cta-con .nav-link-box {
+    display: block;
+    width: fit-content;
+}
+
+.about .cta-con .nav-link-box:hover {
+    transform: translateY(-2px);
+}
+
+.no-radius {
+    border-radius: 0;
+}
+
+.no-radius:active {
+    transform: none;
+}
+
+.portfolio img {
+    height: 300px;
+}
+
+
+
+
+@media (max-width: 900px) and (min-width: 300px) {
+
+    .logo {
+        height: 30px;
+    }
+
+    .navbar {
+        width: 98%;
+    }
+
+    .nav-link-box {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    main {
+        width: 98%;
+    }
+
+    .main-banner {
+        margin-top: 24px;
+        height: 134px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .about {
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+
+    .about p {
+        width: 90%;
+    }
+
+    .portfolio img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .no-radius {
+        border: none;
+    }
+    
+
+}
