@@ -17,6 +17,12 @@ app.get('/old', (req, res) => {
 
 })
 
+app.get('/old2', (req, res) => {
+
+  res.render('portfolio-old');
+
+})
+
 app.get('/scroll', (req, res) => {
   res.render('scroll');
 })
@@ -25,10 +31,6 @@ app.get('/scroll', (req, res) => {
 app.get('/bookoflife', (req, res) => {
   res.render('book');
 })
-
-app.post('')
-
-
 
 //SIGN THE BOOK
 app.post('/signbook', (req, res) => {
