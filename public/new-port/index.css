@@ -104,6 +104,9 @@ main {
     background-position: right;
     background-size: contain;
     border: solid 8px var(--brand);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     transition: all 200ms;
 }
 
@@ -114,6 +117,17 @@ main {
 
 .main-banner:active {
     transform: translateY(-3px);
+}
+
+.icon-img {
+    height: 32px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: all 150ms;
+}
+
+.icon-img:hover {
+    transform: translateY(-2px);
 }
 
 .about {
@@ -173,6 +187,7 @@ main {
 
 
 
+
 @media (max-width: 900px) and (min-width: 300px) {
 
     .logo {
@@ -218,5 +233,8 @@ main {
         border: none;
     }
     
+    .icon-img {
+        height: 24px;
+    }
 
 }
