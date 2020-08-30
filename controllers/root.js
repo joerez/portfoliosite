@@ -8,16 +8,21 @@ module.exports = (app) => {
     res.render('portfolio');
   })
 
+  app.get('/projects', (req, res) => {
+    res.render('projects');
+  })
+
+
 
 
 //old website
-app.get('/old', (req, res) => {
+app.get('/old2', (req, res) => {
 
       res.render('index');
 
 })
 
-app.get('/old2', (req, res) => {
+app.get('/old', (req, res) => {
 
   res.render('portfolio-old');
 

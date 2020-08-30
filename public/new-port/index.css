@@ -158,8 +158,17 @@ main {
     transform: translateY(-2px);
 }
 
+.no-radius {
+    border-radius: 0;
+}
 
+.no-radius:active {
+    transform: none;
+}
 
+.portfolio img {
+    height: 300px;
+}
 
 
 
