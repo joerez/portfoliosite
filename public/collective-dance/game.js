@@ -60,9 +60,9 @@ let score = 0
 let arrow = document.getElementById("arrow")
 
 
-let timeleft = 60;
+let timeleft = 90;
 startButton.addEventListener('click', function() {
-    timeleft = 60
+    timeleft = 90
     var downloadTimer = setInterval(function(){
         if(timeleft === 1) {
             buzzer.play()
