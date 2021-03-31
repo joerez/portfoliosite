@@ -54,6 +54,7 @@ body {
 
 .logo {
     transition: all 150ms;
+    will-change: filter;
 }
 
 .logo:hover {
